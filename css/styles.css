@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+.header {
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  box-sizing: border-box;
+}
+.header__container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left-group, .header__right-group {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header__left-group {
+  gap: 0.5rem;
+}
+.header__right-group {
+  gap: 2rem;
+}
+.header__logo-container {
+  background-color: #FFFFFF;
+  box-shadow: 0px 14px 24px 0px rgba(139, 139, 139, 0.2509803922);
+  width: 36px;
+  height: 36px;
+  padding: 12px;
+  margin: 0 0.5rem 0 1.3rem;
+}
+.header__logo-letter {
+  width: 10.82px;
+  height: 12.35px;
+}
+.header__logo-text {
+  height: 21px;
+  width: 61px;
+  object-fit: contain;
+  display: block;
+  margin-left: -0.5rem;
+}
+.header__button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.header__button--menu, .header__button--profile, .header__button--search {
+  /* Modificadores para tipos específicos de botones */
+}
+.header__icon {
+  height: 24px;
+  width: 24px;
+  object-fit: contain;
+}
+
+.home {
+  height: 50vh;
+  background-color: #333333;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.home__header {
+  width: 80%;
+  margin-bottom: 40px;
+}
+.home__subtitle {
+  width: 80%;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  margin-bottom: 20px;
+}
+.home__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 56px;
+  line-height: 60px;
+  letter-spacing: -1.2px;
+}
+.home__actions {
+  gap: 20px;
+  width: 220px;
+}
+.home__action {
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  flex: 1;
+  width: 100%;
+}
+.home__action--primary {
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+}
+.home__action--secondary {
+  margin-top: 25px;
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid rgba(255, 255, 255, 0.33);
+}
+
+html,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
+
+/*# sourceMappingURL=styles.css.map */
