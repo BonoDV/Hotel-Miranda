@@ -1,0 +1,79 @@
+@use "_variables" as *;
+
+.availability {
+    height: 50vh;
+    background-color: $black-22;
+    margin-bottom: 80px;
+
+    &__dates {
+        padding-top: 36px;
+        margin-left: 20px;
+    }
+
+    &__dates label {
+        font-family: $archivoFont;
+        font-weight: 700;
+        color: $white;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        display: block;
+        width: 100%;
+    }
+
+    &__dates input {
+        width: 90%;
+        height: 60px;
+        font-family: $archivoFont;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        color: $black-33;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid $brown-cafe;
+        padding-left: 50px; // Aumentado para el icono
+        position: relative;
+        background-repeat: no-repeat;
+        background-position: 10px center;
+        background-size: 20px;
+
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+        }
+    }
+
+    // Icono para Arrival (puedes reemplazar la URL con tu SVG)
+    &__dates--arrival {
+        margin-bottom: 30px;
+        background-image: url('../svg/CalendarIcon.svg');
+    }
+
+    // Icono para Departure (mismo SVG pero rotado o diferente)
+    &__dates--departure {
+        background-image: url('../svg/CalendarIcon.svg');
+    }
+
+    &__check {
+        display: flex;
+        gap: 20px;
+        width: 250px;
+        margin-top: 42px;
+        margin-left: 20px;
+    }
+
+    &__check--button {
+        height: 60px;
+        font-family: $archivoFont;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 2.8px;
+        cursor: pointer;
+        flex: 1;
+        width: 100%;
+        background-color: $brown-cafe;
+        color: $white;
+        border: none;
+    }
+}

@@ -2,6 +2,7 @@
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 .header {
   background-color: #FFFFFF;
   width: 100%;
@@ -123,6 +124,228 @@
   background-color: transparent;
   color: #FFFFFF;
   border: 2px solid rgba(255, 255, 255, 0.33);
+}
+
+.availability {
+  height: 50vh;
+  background-color: #222222;
+  margin-bottom: 80px;
+}
+.availability__dates {
+  padding-top: 36px;
+  margin-left: 20px;
+}
+.availability__dates label {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  display: block;
+  width: 100%;
+}
+.availability__dates input {
+  width: 90%;
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  color: #333333;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #BEAD8E;
+  padding-left: 50px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 20px;
+}
+.availability__dates input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.availability__dates--arrival {
+  margin-bottom: 30px;
+  background-image: url("../svg/CalendarIcon.svg");
+}
+.availability__dates--departure {
+  background-image: url("../svg/CalendarIcon.svg");
+}
+.availability__check {
+  display: flex;
+  gap: 20px;
+  width: 250px;
+  margin-top: 42px;
+  margin-left: 20px;
+}
+.availability__check--button {
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  flex: 1;
+  width: 100%;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+}
+
+.about-us {
+  height: 200vh;
+}
+.about-us__container {
+  height: 65vh;
+  background-color: #F9F9F9;
+}
+.about-us__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #777777;
+  font-size: 13px;
+  line-height: 18px;
+  letter-spacing: 2.8px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding-top: 38px;
+  width: 8.125rem;
+  height: 1.1rem;
+}
+.about-us__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #111111;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  margin-left: 20px;
+  margin-top: 3rem;
+  width: 20.625rem;
+  height: 7.5rem;
+  text-align: center;
+}
+.about-us__description {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 0.87rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  margin-top: 1.5rem;
+  text-align: left;
+  width: 335px;
+  height: 127px;
+}
+.about-us__actions button {
+  height: 60px;
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  flex: 1;
+  background-color: #BEAD8E;
+  color: #FFFFFF;
+  border: none;
+  width: 13.5rem;
+  margin-left: 20px;
+  margin-top: 24px;
+}
+.about-us__cards-team, .about-us__cards-luxury {
+  margin-top: 10%;
+}
+.about-us__cards-team > img, .about-us__cards-luxury > img {
+  width: 16.875rem;
+  height: 18.75rem;
+  margin-left: 20%;
+  object-fit: cover;
+}
+.about-us__cards-room {
+  margin-top: 10%;
+}
+.about-us__cards-team-icons, .about-us__cards-luxury-icons {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.about-us__cards-luxury-icons {
+  background-color: #222222;
+  width: 16.875rem;
+  height: 18.75rem;
+  margin-left: 20%;
+}
+.about-us__cards-luxury-icons img {
+  width: 3.5625rem;
+  height: 3.125rem;
+}
+.about-us__cards-team-title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #FFFFFF;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.0563rem;
+  text-align: center;
+  margin-top: 1.875rem;
+  width: 10.6875rem;
+  height: 1.875rem;
+}
+.about-us__cards-team-description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 12.5rem;
+  height: 4.875rem;
+  margin-top: 1.3125rem;
+}
+.about-us__cards-team-icons--small {
+  width: 4.25rem;
+  height: 3.125rem;
+  margin-left: 0%;
+  margin-top: 10%;
+}
+.about-us__cards-team-icons--transparent {
+  position: absolute;
+  left: 47%;
+  width: 9rem;
+  height: 6.625rem;
+  z-index: -3;
+  margin-left: 0%;
+  margin-top: 0%;
+  opacity: 0.1;
+}
+.about-us__cards-team-icons h2 {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #111111;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.0563rem;
+  margin-left: 20px;
+  width: 12.5rem;
+  height: 1.875rem;
+  margin-top: 5%;
+}
+.about-us__cards-team-icons p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #111111;
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  letter-spacing: 0px;
+  margin-left: 20px;
+  width: 12.5rem;
+  height: 4.8125rem;
+  margin-top: 5%;
 }
 
 html,

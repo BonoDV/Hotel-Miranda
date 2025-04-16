@@ -7,7 +7,6 @@
     <title>Hotel Miranda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/styles.css'>
-    <script src='main.js'></script>
 </head>
 
 <body>
@@ -44,6 +43,58 @@
             </div>
         </div>
     </section>
+    <section class="availability">
+        <div class="availability__container">
+            <div class="availability__dates">
+                <label>Arrival Date</label>
+                <input id="date__input--arrival" class="availability__dates--arrival" type="date">
+                <label>Departure Date</label>
+                <input id="date__input--departure" class="availability__dates--departure" type="date">
+            </div>
+            <div class="availability__check">
+                <button class="availability__check--button">CHECK AVAILABILITY</button>
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="about-us__container">
+            <div class="about-us__content">
+                <p class="about-us__subtitle">ABOUT US</p>
+                <h1 class="about-us__title">Discover Our Underground.</h1>
+                <p class="about-us__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="about-us__actions">
+                <button class="about-us__button about-us__button--primary">BOOK NOW</button>
+            </div>
+        </div>
+        <div class="about-us__cards">
+            <div class="about-us__cards-team">
+                <img src="img\strong-team.jpg" alt="Hotel Miranda Strong Team">
+                <div class="about-us__cards-team-icons">
+                    <img src="svg\team-icon.svg" class="about-us__cards-team-icons--small"
+                        alt="Hotel Miranda Strong Team Icon">
+                    <img src="svg\team-icon.svg" class="about-us__cards-team-icons--transparent"
+                        alt="Hotel Miranda Strong Team Big Icon Transparent">
+                    <h2 class="about-us__cards-team-title">Strong Team</h2>
+                    <p class="about-us__cards-team-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor.</p>
+                </div>
+            </div>
+            <div class="about-us__cards-luxury">
+                <img src="img\luxury-hotel-room.jpg" alt="Hotel Miranda Luxury Room">
+                <div class="about-us__cards-luxury-icons">
+                    <img src="svg\calendar-reserve.svg" class="about-us__cards-team-icons--small"
+                        alt="Hotel Miranda Calendar Reserve Icon">
+                    <p class="about-us__cards-team-title">Luxury Room</p>
+                    <h2 class="about-us__cards-team-description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor.</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src='/js/availability.js'></script>
 </body>
 
 </html>
