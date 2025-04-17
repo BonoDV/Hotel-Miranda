@@ -7,6 +7,9 @@
     <title>Hotel Miranda</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel='stylesheet' type='text/css' media='screen' href='../css/styles.css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -100,10 +103,60 @@
                 <p class="rooms__subtitle">ROOMS</p>
                 <h1 class="rooms__title">Hand Picked Rooms</h1>
             </div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <img src="img\rooms-rules.png" alt="Room 1" class="swiper-slide__image--rules">
+                        <div class="swiper-slide__content">
+                            <img src="img\luxury-hotel-room.jpg" alt="Luxury room" class="swiper-slide__image--slider">
+                            <div class="swiper-slide__container">
+                                <h2 class="swiper-slide__title">Colonial Luxure Room</h2>
+                                <p class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p class="swiper-slide__price">$345<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img\rooms-rules.png" alt="Room 1" class="swiper-slide__image--rules">
+                        <div class="swiper-slide__content">
+                            <img src="img\organic-luxe.jpg" alt="Luxury room" class="swiper-slide__image--slider">
+                            <div class="swiper-slide__container">
+                                <h2 class="swiper-slide__title">Organic Luxure Room</h2>
+                                <p class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p class="swiper-slide__price">$345/<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide"><img src="img\rooms-rules.png" alt="Room 1"
+                            class="swiper-slide__image--rules">
+                        <div class="swiper-slide__content">
+                            <img src="img\minimalist-luxe.jpg" alt="Luxury room" class="swiper-slide__image--slider">
+                            <div class="swiper-slide__container">
+                                <h2 class="swiper-slide__title">Minimalist Luxure Room</h2>
+                                <p class="swiper-slide__description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                    elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                <p class="swiper-slide__price">$345/<span>/Night</span></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
-        </div>
+
     </section>
     <script src='/js/availability.js'></script>
+    <script src='/js/swiper.js'></script>
 </body>
 
 </html>

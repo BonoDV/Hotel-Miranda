@@ -86,3 +86,8 @@
     }
 
 }
+
+@mixin swiper($width, $height) {
+    width: $width;
+    height: $height;
+}
