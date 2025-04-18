@@ -1,0 +1,51 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.features {
+    height: 70vh;
+
+    &__subtitle {
+        @include typography($archivoFont, 700,
+            $black-77, .875rem, 100%, 2.8px);
+        text-align: center;
+    }
+
+    &__title {
+        @include typography($oldStandardTTFont, 400,
+            $black-22, 3.5rem, 3.75rem, -1.2px);
+        text-align: center;
+        margin-top: 1.25rem;
+    }
+}
+
+.swiper {
+    height: 23.125rem;
+
+    &-slide__image--transparent {
+        margin-left: 15rem;
+        margin-top: 2rem;
+    }
+
+    &-slide__image--pick-stars {
+        margin-left: 3rem;
+
+    }
+
+    &-slide__title--features {
+        @include typography($oldStandardTTFont, 400,
+            $black-22, 1.875rem, 1.875rem, -0.9px);
+        margin-right: 10rem;
+        margin-top: 4rem;
+    }
+
+    &-slide__description--features {
+        @include typography($archivoFont, 400,
+            $black-77, .875rem, 1.5rem, 0px);
+        margin-right: 4rem;
+        margin-top: 1.7537rem;
+    }
+
+    &-pagination-bullet-active {
+        background-color: rgb(189, 172, 141) !important
+    }
+}

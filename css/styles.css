@@ -527,6 +527,63 @@
   letter-spacing: 2.8px;
 }
 
+.features {
+  height: 70vh;
+}
+.features__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #777777;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  text-align: center;
+}
+.features__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  text-align: center;
+  margin-top: 1.25rem;
+}
+
+.swiper {
+  height: 23.125rem;
+}
+.swiper-slide__image--transparent {
+  margin-left: 15rem;
+  margin-top: 2rem;
+}
+.swiper-slide__image--pick-stars {
+  margin-left: 3rem;
+}
+.swiper-slide__title--features {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 1.875rem;
+  line-height: 1.875rem;
+  letter-spacing: -0.9px;
+  margin-right: 10rem;
+  margin-top: 4rem;
+}
+.swiper-slide__description--features {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  color: #777777;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  margin-right: 4rem;
+  margin-top: 1.7537rem;
+}
+.swiper-pagination-bullet-active {
+  background-color: rgb(189, 172, 141) !important;
+}
+
 html,
 * {
   box-sizing: border-box;
