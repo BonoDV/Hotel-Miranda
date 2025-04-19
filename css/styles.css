@@ -709,6 +709,52 @@
   background-color: rgb(189, 172, 141) !important;
 }
 
+.stats {
+  width: 100%;
+  height: 110vh;
+  background-color: #222222;
+}
+.stats__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stats__icon {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 5rem;
+  height: 5rem;
+}
+.stats__container--projects, .stats__container--backers, .stats__container--categories, .stats__container--raised {
+  display: contents;
+  margin-bottom: 2rem;
+}
+.stats__container--projects-number {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 60px;
+  line-height: 136%;
+  letter-spacing: 0px;
+}
+.stats__container--projects-number span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 16px;
+  line-height: 136%;
+  letter-spacing: 0px;
+}
+.stats__container--projects-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  color: #999999;
+  font-size: 16px;
+  line-height: 136%;
+  letter-spacing: 0px;
+}
+
 html,
 * {
   box-sizing: border-box;
