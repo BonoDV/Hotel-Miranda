@@ -9,7 +9,7 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../css/styles.css'>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -171,7 +171,7 @@
                     <source src="video/intro-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <!--                 <button class="video__button--play"><img src="/img/play-video.png"></button> -->
+
             </div>
             <button class="video__button--book">BOOK NOW</button>
     </section>
@@ -183,70 +183,174 @@
             </div>
         </div>
         <!-- Slider main container -->
-        <div class="swiper">
+        <div class="swiper features-swiper">
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper features-swiper__wrapper">
                 <!-- Slides -->
-                <div class="swiper-slide">
-                    <img src="img\01.png" alt="Room 1" class="swiper-slide__image--transparent">
-                    <div class="swiper-slide__content">
-                        <img src="svg\pick-stars.svg" alt="Luxury room" class="swiper-slide__image--pick-stars">
-                        <div class="swiper-slide__container">
-                            <h2 class="swiper-slide__title--features">Have High Rating</h2>
-                            <p class="swiper-slide__description--features">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
-                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <img src="img\01.png" alt="Room 1" class="swiper-slide__image--transparent">
-                    <div class="swiper-slide__content">
-                        <img src="svg\pick-stars.svg" alt="Luxury room" class="swiper-slide__image--pick-stars">
-                        <div class="swiper-slide__container">
-                            <h2 class="swiper-slide__title--features">Have High Rating</h2>
-                            <p class="swiper-slide__description--features">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
+                <div class="swiper-slide features-swiper__slide">
+                    <img src="img/01.png" alt="Room 1"
+                        class="features-swiper__image features-swiper__image--transparent">
+                    <div class="features-swiper__content">
+                        <img src="svg/pick-stars.svg" alt="Luxury room" class="features-swiper__icon">
+                        <div class="features-swiper__text-container">
+                            <h2 class="features-swiper__title">Have High Rating</h2>
+                            <p class="features-swiper__description">Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="swiper-slide">
-                    <img src="img\01.png" alt="Room 1" class="swiper-slide__image--transparent">
-                    <div class="swiper-slide__content">
-                        <img src="svg\pick-stars.svg" alt="Luxury room" class="swiper-slide__image--pick-stars">
-                        <div class="swiper-slide__container">
-                            <h2 class="swiper-slide__title--features">Have High Rating</h2>
-                            <p class="swiper-slide__description--features">Lorem ipsum dolor sit amet, consectetur
-                                adipisicing
+                <div class="swiper-slide features-swiper__slide">
+                    <img src="img/01.png" alt="Room 1"
+                        class="features-swiper__image features-swiper__image--transparent">
+                    <div class="features-swiper__content">
+                        <img src="svg/pick-stars.svg" alt="Luxury room" class="features-swiper__icon">
+                        <div class="features-swiper__text-container">
+                            <h2 class="features-swiper__title">Have High Rating</h2>
+                            <p class="features-swiper__description">Lorem ipsum dolor sit amet, consectetur adipisicing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide features-swiper__slide">
+                    <img src="img/01.png" alt="Room 1"
+                        class="features-swiper__image features-swiper__image--transparent">
+                    <div class="features-swiper__content">
+                        <img src="svg/pick-stars.svg" alt="Luxury room" class="features-swiper__icon">
+                        <div class="features-swiper__text-container">
+                            <h2 class="features-swiper__title">Have High Rating</h2>
+                            <p class="features-swiper__description">Lorem ipsum dolor sit amet, consectetur adipisicing
                                 elit, sed do eiusmod tempor incididunt ut labore et dolore magna..</p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-pagination"></div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination features-swiper__pagination"></div>
         </div>
+
 
     </section>
     <section class="menu">
         <div class="menu__container">
             <div class="menu__header">
+                <img src="svg\donut.svg" alt="Menu Icon" class="menu__icon">
                 <p class="menu__subtitle">MENU</p>
                 <h1 class="menu__title">Our Foods Menu</h1>
             </div>
-            <div class="menu__content">
-                <img src="img\menu.png" alt="Menu" class="menu__image">
-                <div class="menu__description">
-                    <p class="menu__description--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <button class="menu__button--book">BOOK NOW</button>
+            <div class="swiper foods-swiper">
+                <div class="swiper-wrapper foods-swiper__wrapper">
+                    <!-- Grupo vertical 1 -->
+                    <div class="swiper-slide foods-swiper__slide">
+                        <div class="foods-swiper__vertical-group">
+                            <!-- Item 1 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Eggs and Bacon" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Eggs & Bacon</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Tea or Coffee" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Tea or Coffee</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Chia Oatmeal" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Chia Oatmeal</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Grupo vertical 2 (siguiente conjunto de 3 items) -->
+                    <div class="swiper-slide foods-swiper__slide">
+                        <div class="foods-swiper__vertical-group">
+                            <!-- Items 4-6 -->
+                            <!-- Item 1 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Eggs and Bacon" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Eggs & Bacon2</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Tea or Coffee" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Tea or Coffee2</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="foods-swiper__item">
+                                <img src="img/eggs-bacon.jpg" alt="Chia Oatmeal" class="foods-swiper__image">
+                                <div class="foods-swiper__text-container">
+                                    <h3 class="foods-swiper__title">Chia Oatmeal2</h3>
+                                    <p class="foods-swiper__description">Lorem ipsum dolor sit amet, consectetur adip
+                                        isicing elit, sed do eiusmod tempor.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev foods-swiper__button-prev"></div>
+                <div class="swiper-button-next foods-swiper__button-next"></div>
             </div>
 
+
+        </div>
+
+    </section>
+    <section class="photos">
+        <div class="photos__container">
+            <!-- Slider main container -->
+            <div class="swiper photos-swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper photos-swiper__wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide photos-swiper__slide">
+                        <img src="img/eggs-bacon.jpg" alt="Room 1"
+                            class="photos-swiper__image photos-swiper__image--transparent">
+                    </div>
+
+                    <div class="swiper-slide photos-swiper__slide">
+                        <img src="img/eggs-bacon.jpg" alt="Room 1"
+                            class="photos-swiper__image photos-swiper__image--transparent">
+                    </div>
+
+                    <div class="swiper-slide photos-swiper__slide">
+                        <img src="img/eggs-bacon.jpg" alt="Room 1"
+                            class="photos-swiper__image photos-swiper__image--transparent">
+                    </div>
+                </div>
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination photos-swiper__pagination"></div>
+            </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src='/js/availability.js'></script>
     <script src='/js/swiper.js'></script>
 </body>

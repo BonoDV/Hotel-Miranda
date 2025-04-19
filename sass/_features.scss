@@ -2,7 +2,7 @@
 @use 'mixins' as *;
 
 .features {
-    height: 70vh;
+    height: 65vh;
 
     &__subtitle {
         @include typography($archivoFont, 700,
@@ -18,34 +18,49 @@
     }
 }
 
-.swiper {
+.features-swiper {
     height: 23.125rem;
 
-    &-slide__image--transparent {
-        margin-left: 15rem;
-        margin-top: 2rem;
+    // Mantener las clases de SwiperJS
+    &.swiper {
+        // Estilos específicos del contenedor Swiper
     }
 
-    &-slide__image--pick-stars {
-        margin-left: 3rem;
-
+    &__wrapper.swiper-wrapper {
+        // Estilos para el wrapper
     }
 
-    &-slide__title--features {
-        @include typography($oldStandardTTFont, 400,
-            $black-22, 1.875rem, 1.875rem, -0.9px);
-        margin-right: 10rem;
-        margin-top: 4rem;
+    &__slide.swiper-slide {
+        // Estilos para cada slide
+
+        .features-swiper__image {
+            &--transparent {
+                margin-left: 15rem;
+                margin-top: 2rem;
+            }
+        }
+
+        .features-swiper__icon {
+            margin-left: 3rem;
+        }
+
+        .features-swiper__title {
+            @include typography($oldStandardTTFont, 400, $black-22, 1.875rem, 1.875rem, -0.9px);
+            margin-left: 2rem;
+            margin-top: 4rem;
+        }
+
+        .features-swiper__description {
+            @include typography($archivoFont, 400, $black-77, 0.875rem, 1.5rem, 0px);
+            margin-left: 2rem;
+            margin-top: 1.7537rem;
+            width: 15.625rem;
+        }
     }
 
-    &-slide__description--features {
-        @include typography($archivoFont, 400,
-            $black-77, .875rem, 1.5rem, 0px);
-        margin-right: 4rem;
-        margin-top: 1.7537rem;
-    }
-
-    &-pagination-bullet-active {
-        background-color: rgb(189, 172, 141) !important
-    }
+         &__pagination.swiper-pagination {
+        .swiper-pagination-bullet-active {
+            background-color: rgb(189, 172, 141) !important;
+        }
+    } 
 }

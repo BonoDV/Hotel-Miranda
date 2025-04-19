@@ -528,7 +528,7 @@
 }
 
 .features {
-  height: 70vh;
+  height: 65vh;
 }
 .features__subtitle {
   font-family: "Archivo", sans-serif;
@@ -550,37 +550,162 @@
   margin-top: 1.25rem;
 }
 
-.swiper {
+.features-swiper {
   height: 23.125rem;
 }
-.swiper-slide__image--transparent {
+.features-swiper__slide.swiper-slide .features-swiper__image--transparent {
   margin-left: 15rem;
   margin-top: 2rem;
 }
-.swiper-slide__image--pick-stars {
+.features-swiper__slide.swiper-slide .features-swiper__icon {
   margin-left: 3rem;
 }
-.swiper-slide__title--features {
+.features-swiper__slide.swiper-slide .features-swiper__title {
   font-family: "Old Standard TT", serif;
   font-weight: 400;
   color: #222222;
   font-size: 1.875rem;
   line-height: 1.875rem;
   letter-spacing: -0.9px;
-  margin-right: 10rem;
+  margin-left: 2rem;
   margin-top: 4rem;
 }
-.swiper-slide__description--features {
+.features-swiper__slide.swiper-slide .features-swiper__description {
   font-family: "Archivo", sans-serif;
   font-weight: 400;
   color: #777777;
   font-size: 0.875rem;
   line-height: 1.5rem;
   letter-spacing: 0px;
-  margin-right: 4rem;
+  margin-left: 2rem;
   margin-top: 1.7537rem;
+  width: 15.625rem;
 }
-.swiper-pagination-bullet-active {
+.features-swiper__pagination.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgb(189, 172, 141) !important;
+}
+
+.menu {
+  height: 100vh;
+}
+.menu__header img {
+  position: relative;
+  left: 79%;
+}
+.menu__subtitle {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #777777;
+  font-size: 0.875rem;
+  line-height: 100%;
+  letter-spacing: 2.8px;
+  padding-top: 4rem;
+  margin-left: 1.5625rem;
+}
+.menu__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 3.5rem;
+  line-height: 3.75rem;
+  letter-spacing: -1.2px;
+  width: 80%;
+  margin-left: 1.25rem;
+  margin-top: 2rem;
+}
+
+.foods-swiper {
+  height: auto;
+  padding: 2rem 0;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.foods-swiper__wrapper {
+  align-items: flex-start;
+}
+.foods-swiper__slide {
+  width: 100%;
+  height: auto;
+}
+.foods-swiper__vertical-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.foods-swiper__item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 100%;
+  padding: 1rem;
+  gap: 1.5rem;
+}
+.foods-swiper__image {
+  width: 7.5rem;
+  height: 7.5rem;
+  flex-shrink: 0;
+}
+.foods-swiper__text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex-grow: 1;
+}
+.foods-swiper__title {
+  font-family: "Old Standard TT", serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  letter-spacing: -0.72px;
+  margin: 0;
+  text-align: left;
+}
+.foods-swiper__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #222222;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  letter-spacing: 0px;
+  margin: 0;
+  text-align: left;
+  width: 80%;
+}
+.foods-swiper__button-prev, .foods-swiper__button-next {
+  color: #222222;
+  background: #BDAC8D;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  top: 50%;
+  transform: translateY(-50%);
+}
+.foods-swiper__button-prev::after, .foods-swiper__button-next::after {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.foods-swiper__button-prev {
+  left: -50px;
+}
+.foods-swiper__button-next {
+  right: -50px;
+}
+
+.photos {
+  margin-bottom: 3.75rem;
+}
+
+.photos-swiper {
+  height: 25rem;
+}
+.photos-swiper__slide.swiper-slide .photos-swiper__image--transparent {
+  width: 20.9375rem;
+  height: 20.9375rem;
+  object-fit: cover;
+  margin-left: 3rem;
+}
+.photos-swiper__pagination.swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgb(189, 172, 141) !important;
 }
 
