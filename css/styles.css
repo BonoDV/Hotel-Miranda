@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
@@ -69,6 +70,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* About */
 }
 .home__container {
   max-width: 1200px;
@@ -117,6 +119,48 @@
   margin-top: 25px;
   background-color: transparent;
   border: 2px solid rgba(255, 255, 255, 0.33);
+}
+.home--about {
+  height: 30vh;
+  background-color: #333333;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  /* Añade esto para que sea el contenedor de referencia */
+}
+.home__position {
+  width: 40%;
+  height: 3.125rem;
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  /* Cambia a posición absoluta */
+  right: 0;
+  /* Lo coloca a la derecha */
+  bottom: 0;
+  /* Lo coloca en la parte inferior */
+  margin-right: 1.25rem;
+  margin-top: 0.5rem;
+}
+.home__position p {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #222222;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.48px;
+}
+.home__position p span {
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+  color: #BEAD8E;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: -0.48px;
 }
 
 .availability {
