@@ -1,4 +1,4 @@
-@use "_header";
+@use "../sass/common/_header";
 @use "_home";
 @use "_availability";
 @use "_about-us";
@@ -8,7 +8,7 @@
 @use "_menu";
 @use "_photos";
 @use "_stats";
-@use "_footer";
+@use "../sass/common/_footer";
 
 html,
 * {
