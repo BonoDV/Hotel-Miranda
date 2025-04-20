@@ -505,10 +505,10 @@
   height: 16.875rem;
   margin-top: 2rem;
 }
-.video__player {
+.video__actions iframe {
   width: 90%;
   height: 16.875rem;
-  margin-left: 1.25rem;
+  margin-left: 0.8rem;
 }
 .video__button--book {
   background-color: #BEAD8E;
